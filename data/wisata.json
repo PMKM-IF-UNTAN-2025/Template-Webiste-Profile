@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "judul": "Air Terjun Capkala",
+    "deskripsi": "Air terjun yang indah dengan ketinggian 15 meter, dikelilingi oleh hutan tropis yang masih asri. Tempat ini cocok untuk wisata alam dan fotografi.",
+    "gambar": "https://cdn.digitaldesa.com/uploads/profil/32.01.30.2006/common/684bbbbf567012373c488653546d4d34.jpeg",
+    "penulis": "Tim Pariwisata",
+    "slug": "air-terjun-capkala",
+    "interval": "3 hari yang lalu",
+    "created_at": "2024-12-09"
+  },
+  {
+    "id": 2,
+    "judul": "Bukit Panorama",
+    "deskripsi": "Bukit dengan pemandangan yang menakjubkan ke seluruh wilayah desa. Tempat yang sempurna untuk melihat sunrise dan sunset.",
+    "gambar": "/placeholder-card.jpg",
+    "penulis": "Tim Pariwisata",
+    "slug": "bukit-panorama",
+    "interval": "1 minggu yang lalu",
+    "created_at": "2024-12-02"
+  },
+  {
+    "id": 3,
+    "judul": "Kampung Adat",
+    "deskripsi": "Kampung tradisional yang masih mempertahankan arsitektur dan budaya asli. Pengunjung dapat belajar tentang sejarah dan tradisi desa.",
+    "gambar": "/placeholder-card.jpg",
+    "penulis": "Tim Pariwisata",
+    "slug": "kampung-adat",
+    "interval": "2 minggu yang lalu",
+    "created_at": "2024-11-25"
+  }
+]

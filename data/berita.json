@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "judul": "Festival Budaya Desa Capkala 2024",
+    "deskripsi": "Desa Capkala menggelar festival budaya tahunan yang menampilkan berbagai kesenian dan tradisi lokal. Acara ini diikuti oleh seluruh warga desa dan tamu dari luar daerah.",
+    "gambar": "https://cdn.digitaldesa.com/uploads/profil/32.01.30.2006/common/684bbbbf567012373c488653546d4d34.jpeg",
+    "penulis": "Admin Desa",
+    "kategori_berita": "Budaya",
+    "kategori_slug": "budaya",
+    "slug": "festival-budaya-desa-capkala-2024",
+    "interval": "2 hari yang lalu",
+    "created_at": "2024-12-10"
+  },
+  {
+    "id": 2,
+    "judul": "Pembangunan Jalan Desa Selesai",
+    "deskripsi": "Pemerintah desa telah menyelesaikan pembangunan jalan desa sepanjang 2 kilometer yang menghubungkan dusun utara dan selatan. Pembangunan ini menggunakan dana desa tahun 2024.",
+    "gambar": "/placeholder-card.jpg",
+    "penulis": "Sekretaris Desa",
+    "kategori_berita": "Infrastruktur",
+    "kategori_slug": "infrastruktur",
+    "slug": "pembangunan-jalan-desa-selesai",
+    "interval": "1 minggu yang lalu",
+    "created_at": "2024-12-03"
+  },
+  {
+    "id": 3,
+    "judul": "Program Pemberdayaan UMKM",
+    "deskripsi": "Desa Capkala meluncurkan program pemberdayaan UMKM untuk meningkatkan perekonomian warga. Program ini memberikan pelatihan dan bantuan modal untuk pengusaha kecil.",
+    "gambar": "/placeholder-card.jpg",
+    "penulis": "Kasi Kesejahteraan",
+    "kategori_berita": "Ekonomi",
+    "kategori_slug": "ekonomi",
+    "slug": "program-pemberdayaan-umkm",
+    "interval": "2 minggu yang lalu",
+    "created_at": "2024-11-26"
+  }
+]

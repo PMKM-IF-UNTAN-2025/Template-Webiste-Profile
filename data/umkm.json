@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "nama": "Kopi Capkala Premium",
+    "pemilik": "Bapak Ahmad",
+    "harga": 25000,
+    "gambar": "https://cdn.digitaldesa.com/uploads/profil/32.01.30.2006/common/684bbbbf567012373c488653546d4d34.jpeg",
+    "slug": "kopi-capkala-premium",
+    "instagram": "https://instagram.com/kopicapkala",
+    "nomor_hp": "81234567890",
+    "deskripsi": "Kopi premium hasil panen dari perkebunan desa dengan cita rasa yang khas dan aroma yang menggoda."
+  },
+  {
+    "id": 2,
+    "nama": "Kerajinan Anyaman Bambu",
+    "pemilik": "Ibu Siti",
+    "harga": 50000,
+    "gambar": "/placeholder-card.jpg",
+    "slug": "kerajinan-anyaman-bambu",
+    "instagram": "",
+    "nomor_hp": "81234567891",
+    "deskripsi": "Kerajinan anyaman bambu tradisional yang dibuat dengan tangan, cocok untuk dekorasi rumah."
+  },
+  {
+    "id": 3,
+    "nama": "Madu Hutan Capkala",
+    "pemilik": "Bapak Budi",
+    "harga": 75000,
+    "gambar": "/placeholder-card.jpg",
+    "slug": "madu-hutan-capkala",
+    "instagram": "https://instagram.com/maducapkala",
+    "nomor_hp": "81234567892",
+    "deskripsi": "Madu murni hasil panen dari lebah hutan yang hidup di kawasan desa, kaya akan nutrisi."
+  }
+]
