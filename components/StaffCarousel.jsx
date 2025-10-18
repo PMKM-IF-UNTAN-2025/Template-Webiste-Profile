@@ -1,31 +1,23 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 
-export default function StaffCarousel(){
+
+// staffData adalah array dari objek yang berisi { id, name, position, imageUrl }
+// Jika ingin adjust data staff, adjust pada data yang dikirim sebagai props
+// lokasi: data ada pada /data/staffData.js
+
+export default function StaffCarousel({ staffData }){
   const [currentSlide, setCurrentSlide] = useState(0)
   
-  // Sample staff data - replace with actual data
-  const staffData = [
-    {
-      id: 1,
-      name: 'Kepala Desa',
-      position: 'Kepala Desa',
-      image: '/img/staff/default.svg'
-    },
-    {
-      id: 2,
-      name: 'Sekretaris Desa',
-      position: 'Sekretaris Desa',
-      image: '/img/staff/default.svg'
-    },
-    {
-      id: 3,
-      name: 'Kepala Dusun',
-      position: 'Pelaksana Kewilayahan',
-      image: '/img/staff/default.svg'
-    }
-  ]
-
+  // Pastikan staffData tersedia dan memiliki panjang yang valid
+  if (!staffData || !Array.isArray(staffData) || staffData.length === 0) {
+    return (
+      <div className="text-center p-4">
+        <p>Tidak ada data staff yang tersedia</p>
+      </div>
+    )
+  }
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % staffData.length)
@@ -56,8 +48,11 @@ export default function StaffCarousel(){
                 <div className="ratio ratio-1x1">
                   <img 
                     className="rounded-4 object-fit-cover" 
-                    src={staff.image} 
+                    src={staff.imageUrl || '/img/staff/default.svg'} 
                     alt={staff.name}
+                    onError={(e) => {
+                      e.target.src = '/img/staff/default.svg'
+                    }}
                   />
                 </div>
                 <div className="card-img-overlay bg-transparent rounded-4 d-flex flex-column justify-content-end p-2">
