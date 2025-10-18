@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "name": "Kepala Desa",
+      "position": "Kepala Desa",
+      "imageUrl": "https://png.pngtree.com/png-vector/20241025/ourmid/pngtree-happy-man-with-arms-crossed-confidently-smiling-showing-pride-and-a-png-image_14167131.png"
+    },
+    {
+      "id": 2,
+      "name": "Sekretaris Desa",
+      "position": "Sekretaris Desa",
+      "imageUrl": "https://png.pngtree.com/png-vector/20241025/ourmid/pngtree-happy-man-with-arms-crossed-confidently-smiling-showing-pride-and-a-png-image_14167131.png"
+    },
+    {
+      "id": 3,
+      "name": "Kepala Dusun",
+      "position": "Pelaksana Kewilayahan",
+      "imageUrl": "https://png.pngtree.com/png-vector/20241025/ourmid/pngtree-happy-man-with-arms-crossed-confidently-smiling-showing-pride-and-a-png-image_14167131.png"
+    }
+  ]
