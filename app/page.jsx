@@ -12,6 +12,7 @@ import hero from '../data/hero.json'
 import berita from '../data/berita.json'
 import wisata from '../data/wisata.json'
 import umkm from '../data/umkm.json'
+import FasilitasPublik from '../layout/fasilitas-publik'
 
 export default function Home(){
   return (
@@ -19,8 +20,9 @@ export default function Home(){
       {/* Hero */}
       <HeroCarousel slides={hero} />
       
-      {/* Link */}
-      <LinkSection />
+      {/* Fasilitas Publik */}
+      <FasilitasPublik />
+      
       
       {/* Perangkat Desa & Video */}
       <section className="page-section">
