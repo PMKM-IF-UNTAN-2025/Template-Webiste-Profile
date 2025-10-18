@@ -1,6 +1,11 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 
+
+// staffData adalah array dari objek yang berisi { id, name, position, imageUrl }
+// Jika ingin adjust data staff, adjust pada data yang dikirim sebagai props
+// lokasi: data ada pada /data/staffData.js
+
 export default function StaffCarousel({ staffData }){
   const [currentSlide, setCurrentSlide] = useState(0)
   

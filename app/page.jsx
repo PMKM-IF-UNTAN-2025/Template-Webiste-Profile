@@ -47,8 +47,7 @@ export default function Home(){
       <section id="data-wilayah">
         <MapSection />
       </section>
-
-
+      
     </>
   )
 }

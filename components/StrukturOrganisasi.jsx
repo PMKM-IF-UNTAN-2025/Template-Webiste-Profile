@@ -32,6 +32,10 @@ function ImageOrPlaceholder({src, alt, title}) {
   )
 }
 
+// Variable images adalah array dari objek gambar yang berisi { id, title, imageUrl, description }
+// Jika ingin adjust data gambar, adjust pada data yang dikirim sebagai props
+// lokasi: data ada pada /data/strukturOrganisasi.js
+
 export default function StrukturOrganisasi({ images = [] }) {
   const [currentSlide, setCurrentSlide] = useState(0)
 

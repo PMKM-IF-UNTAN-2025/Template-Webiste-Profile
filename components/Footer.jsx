@@ -18,7 +18,8 @@ export default function Footer({ site }){
                   <span>Provinsi Kalimantan Barat, Kode Pos 79211</span>
                 </div>
               </div>
-
+              
+              {/* jika ingin adjust data kontak, sosial media desa atau email, adjust pada data yang ada dibawah ini */}
               <div className="col-lg-6 d-flex justify-content-lg-center">
                 <div className="d-flex flex-column gap-2 mb-4">
                   <a className="link-footer d-flex gap-3 align-items-center" href="mailto:example@gmail.com">

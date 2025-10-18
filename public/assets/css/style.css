@@ -32,19 +32,52 @@ body {
 }
 
 /* Navbar Styles */
+.navbar {
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  text-decoration: none;
+}
+
 .navbar-brand-title {
   font-size: 1.1rem;
+  font-weight: 600;
   color: var(--primary-color);
+  margin: 0;
 }
 
 .navbar-brand-subtitle {
   font-size: 0.85rem;
   color: var(--secondary-color);
+  margin: 0;
 }
 
+.nav-link {
+  color: var(--dark-color) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
 .nav-link.active {
   color: var(--primary-color) !important;
-  font-weight: 600;
+}
+
+/* Responsive Navbar */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0 !important;
+  }
 }
 
 /* Hero Carousel */
