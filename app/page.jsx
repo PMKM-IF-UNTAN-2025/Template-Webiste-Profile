@@ -14,6 +14,7 @@ import berita from '../data/berita.json'
 import wisata from '../data/wisata.json'
 import umkm from '../data/umkm.json'
 import FasilitasPublik from '../layout/fasilitas-publik'
+import DataWilayah from '../layout/data-wilayah'
 
 export default function Home(){
   return (
@@ -23,6 +24,13 @@ export default function Home(){
       
       {/* Fasilitas Publik */}
       <FasilitasPublik />
+      {/* Link */}
+      <LinkSection />
+
+      {/* Data Wilayah */}
+      <DataWilayah />
+
+
       
       {/* Visi Misi */}
       <VisiMisiPage />
