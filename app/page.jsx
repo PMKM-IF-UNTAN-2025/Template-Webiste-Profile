@@ -59,9 +59,6 @@ export default function Home(){
           </div>
         </div>
       </section>
-
-
-
       {/* Lokasi */}
       <MapSection />
     </>
