@@ -12,6 +12,7 @@ import hero from '../data/hero.json'
 import berita from '../data/berita.json'
 import wisata from '../data/wisata.json'
 import umkm from '../data/umkm.json'
+import DataWilayah from '../layout/data-wilayah'
 
 export default function Home(){
   return (
@@ -21,6 +22,11 @@ export default function Home(){
       
       {/* Link */}
       <LinkSection />
+
+      {/* Data Wilayah */}
+      <DataWilayah />
+
+
       
       {/* Perangkat Desa & Video */}
       <section className="page-section">

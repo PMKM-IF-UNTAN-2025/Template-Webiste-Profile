@@ -9,7 +9,7 @@ export default function LinkSection(){
     { href: '/sarana-prasarana', icon: 'bi-bank', title: 'Sarana dan Prasarana' },
     { href: '/dokumen', icon: 'bi-file-earmark', title: 'Dokumen Publik' },
     { href: '/data-penduduk', icon: 'bi-people', title: 'Data Penduduk' },
-    { href: '/data-kewilayahan', icon: 'bi-globe-asia-australia', title: 'Data Kewilayahan' }
+    { href: '/data-wilayah', icon: 'bi-globe-asia-australia', title: 'Data Wilayah' }
   ]
 
   return (

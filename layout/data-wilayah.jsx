@@ -1,10 +1,11 @@
-import wilayahData from "../../data/wilayah.json";
+"use client";
+import wilayahData from "../data/wilayah.json";
 
-export default function DataWilayahPage() {
+export default function DataWilayah() {
   const { identitas } = wilayahData;
 
   return (
-    <div className="container" style={{ marginTop: "100px", marginBottom:"100px"}}>
+    <div className="container my-5">
       <h1 className="mb-3 text-center fw-bold text-primary">
         Data Wilayah Desa {identitas.desa}
       </h1>
@@ -13,6 +14,7 @@ export default function DataWilayahPage() {
       </p>
 
       <div className="row g-4">
+        {/* Identitas Wilayah */}
         <div className="col-md-6">
           <div className="card shadow-sm h-100">
             <div className="card-body">
@@ -57,6 +59,7 @@ export default function DataWilayahPage() {
           </div>
         </div>
 
+        {/* Peta Lokasi */}
         <div className="col-md-6">
           <div className="card shadow-sm h-100">
             <div className="card-body">
