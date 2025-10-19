@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import ThemeToggle from './ThemeToggle'
@@ -17,7 +17,7 @@ export default function Navbar(){
   return (
     <header className="fixed-top">
       <div className="container p-4">
-        <div className="card rounded-4 border-0 m-0" id="navbar">
+        <div className="card rounded-4 border-0 m-0 shadow-sm">
           <div className="card-body p-0">
             <nav className="navbar navbar-expand-lg p-2">
               <div className="container px-2">
@@ -39,15 +39,15 @@ export default function Navbar(){
                 <button 
                   className="navbar-toggler border-0" 
                   type="button" 
-                  data-bs-toggle="collapse" 
-                  data-bs-target="#navbarNav" 
                   aria-controls="navbarNav" 
-                  aria-expanded="false" 
+                  aria-expanded={isMenuOpen}
                   aria-label="Toggle navigation"
-                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  onClick={toggleMenu}
                 >
                   <span className="navbar-toggler-icon"></span>
                 </button>
+
+                {/* Navigation Menu */}
                 <div className={`collapse navbar-collapse py-2 ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
                   <ul className="navbar-nav ms-auto text-center">
                     <li className="nav-item">
@@ -65,26 +65,29 @@ export default function Navbar(){
                         <li><Link className={`dropdown-item ${isActive('/data-wilayah')}`} href="/data-wilayah">Data Kewilayahan</Link></li>
                       </ul>
                     </li>
-                    <li className="nav-item dropdown">
-                      <a className={`nav-link dropdown-toggle ${isActive('/berita') || isActive('/pengumuman') || isActive('/layanan') || isActive('/sarana-prasarana') || isActive('/dokumen')}`} href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Informasi
-                      </a>
-                      <ul className="dropdown-menu px-2">
-                        <li><Link className={`dropdown-item ${isActive('/berita')}`} href="/berita">Berita</Link></li>
-                        <li><Link className={`dropdown-item ${isActive('/pengumuman')}`} href="/pengumuman">Pengumuman</Link></li>
-                        <li><Link className={`dropdown-item ${isActive('/layanan')}`} href="/layanan">Layanan</Link></li>
-                        <li><Link className={`dropdown-item ${isActive('/sarana-prasarana')}`} href="/sarana-prasarana">Sarana & Prasarana</Link></li>
-                        <li><Link className={`dropdown-item ${isActive('/dokumen')}`} href="/dokumen">Dokumen Publik</Link></li>
-                      </ul>
+                    <li className="nav-item mx-1">
+                      <button 
+                        className="nav-link border-0 bg-transparent p-2" 
+                        onClick={() => handleSectionNavigation('struktur-organisasi')}
+                      >
+                        Struktur Organisasi
+                      </button>
                     </li>
-                    <li className="nav-item">
-                      <Link className={`nav-link ${isActive('/pariwisata')}`} href="/pariwisata">Pariwisata</Link>
+                    <li className="nav-item mx-1">
+                      <button 
+                        className="nav-link border-0 bg-transparent p-2" 
+                        onClick={() => handleSectionNavigation('data-wilayah')}
+                      >
+                        Data Wilayah
+                      </button>
                     </li>
-                    <li className="nav-item">
-                      <Link className={`nav-link ${isActive('/umkm')}`} href="/umkm">UMKM</Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className={`nav-link ${isActive('/kontak')}`} href="/kontak">Kontak</Link>
+                    <li className="nav-item mx-1">
+                      <button 
+                        className="nav-link border-0 bg-transparent p-2" 
+                        onClick={handleFooterNavigation}
+                      >
+                        Kontak
+                      </button>
                     </li>
                   </ul>
                   <div className="vr ms-2 me-3 d-none d-lg-inline"></div>

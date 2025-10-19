@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Struktur Organisasi Pemerintahan Desa",
+    "imageUrl": "https://ringdikit-buleleng.desa.id/assets/files/artikel/sedang_1666792628Struktur%20Desa%202022.JPG",
+    "description": "Gambar struktur organisasi pemerintahan desa yang menunjukkan hierarki kepemimpinan dan pembagian tugas"
+  },
+  {
+    "id": 2,
+    "title": "Badan Permusyawaratan Desa (BPD)",
+    "imageUrl": "https://asset.kompas.com/crops/eXRKqIAGxjkK5XCQn-Rkm1byFCE=/0x48:1024x730/1200x800/data/photo/2022/06/04/629b54ac4d4ba.png",
+    "description": "Struktur organisasi Badan Permusyawaratan Desa sebagai lembaga legislatif desa"
+  },
+  {
+    "id": 3,
+    "title": "Lembaga Kemasyarakatan Desa",
+    "imageUrl": "https://www.desabira.com/wp-content/uploads/2022/08/AA-01-picsay-scaled.jpg",
+    "description": "Organisasi lembaga kemasyarakatan yang mendukung pembangunan desa"
+  }
+]
