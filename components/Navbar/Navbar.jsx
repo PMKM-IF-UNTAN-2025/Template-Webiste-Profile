@@ -62,7 +62,7 @@ export default function Navbar(){
                         <li><Link className={`dropdown-item ${isActive('/profil/visi-misi')}`} href="/profil/visi-misi">Visi & Misi</Link></li>
                         <li><Link className={`dropdown-item ${isActive('/sotk')}`} href="/sotk">SOTK</Link></li>
                         <li><Link className={`dropdown-item ${isActive('/data-penduduk')}`} href="/data-penduduk">Data Penduduk</Link></li>
-                        <li><Link className={`dropdown-item ${isActive('/data-kewilayahan')}`} href="/data-kewilayahan">Data Kewilayahan</Link></li>
+                        <li><Link className={`dropdown-item ${isActive('/data-wilayah')}`} href="/data-wilayah">Data Kewilayahan</Link></li>
                       </ul>
                     </li>
                     <li className="nav-item dropdown">
