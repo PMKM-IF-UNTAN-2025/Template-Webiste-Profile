@@ -7,6 +7,12 @@ export default function Navbar(){
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname()
 
+  const links = [
+    { href: '/', icon: 'bi-bank', title: 'Visi-Misi'},
+    { href: '#fasilitasPublik', icon: 'bi-bank', title: 'Fasilitas Publik' },
+    { href: '/data-kewilayahan', icon: 'bi-globe-asia-australia', title: 'Data Kewilayahan' }
+  ]
+
   const isActive = (path) => {
     if (path === '/' && pathname === '/') return 'active'
     if (path !== '/' && pathname.startsWith(path)) return 'active'
@@ -43,6 +49,22 @@ export default function Navbar(){
                 >
                   <span className="navbar-toggler-icon"></span>
                 </button>
+                <div className='d-flex justify-content-start '>
+                  {links.map((link, index) => (
+                    <div key={index} className="link-wrapper-item">
+                      <Link href={link.href} className="link-main">
+                        <div className="link-main-item">
+                          <div className="d-flex flex-column px-3 gap-2 align-items-center">
+                            <span className="fs-1 icon">
+                              <i className={`bi ${link.icon}`}></i>
+                            </span>
+                            <h5>{link.title}</h5>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                  ))}
+                </div>
                 <div className={`collapse navbar-collapse py-2 ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
                   <ul className="navbar-nav ms-auto text-center">
                     <li className="nav-item">
