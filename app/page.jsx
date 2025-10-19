@@ -20,7 +20,7 @@ export default function Home(){
       <HeroCarousel slides={hero} />
 
       {/* Link */}
-      <LinkSection />
+      {/* <LinkSection /> */}
 
       {/* Visi Misi */}
       <VisiMisiPage />
@@ -29,6 +29,8 @@ export default function Home(){
       <section className="page-section mt-10">
         <div className="container px-4">
           <div className="row justify-content-center align-items-center g-4">
+          <h2 className="section-heading text-center mb-0">Perangkat Desa Capkala</h2>
+          <p className="text-muted text-center">Pemerintah dan Staff Desa</p>
             <div className="col-lg-5">
               <div data-aos="fade-up" data-aos-duration="1000">
                 <StaffCarousel staffData={staffData} />
