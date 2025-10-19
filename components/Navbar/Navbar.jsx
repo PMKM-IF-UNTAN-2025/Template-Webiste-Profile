@@ -17,50 +17,6 @@ export default function Navbar(){
     setIsMenuOpen(false)
   }, [pathname])
 
-  const handleSectionNavigation = (sectionId) => {
-    setIsMenuOpen(false)
-    
-    if (pathname === '/') {
-      setTimeout(() => {
-        const element = document.getElementById(sectionId)
-        if (element) {
-          const offset = 100
-          const elementPosition = element.getBoundingClientRect().top
-          const offsetPosition = elementPosition + window.pageYOffset - offset
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          })
-        }
-      }, 100)
-    } else {
-      router.push(`/#${sectionId}`)
-    }
-  }
-
-  const handleFooterNavigation = () => {
-    setIsMenuOpen(false)
-    
-    if (pathname === '/') {
-      setTimeout(() => {
-        const footer = document.getElementById('footer')
-        if (footer) {
-          const offset = 100
-          const footerPosition = footer.getBoundingClientRect().top
-          const offsetPosition = footerPosition + window.pageYOffset - offset
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          })
-        }
-      }, 100)
-    } else {
-      router.push('/#footer')
-    }
-  }
-  
   const isActive = (path) => {
     if (path === "/" && pathname === "/") return 'active'
     if (path !== "/" && pathname.startsWith(path)) return 'active'
@@ -106,42 +62,19 @@ export default function Navbar(){
                     <li className="nav-item">
                       <Link className={`nav-link ${isActive('active')}`} href="/">Beranda</Link>
                     </li>
-                    <li className="nav-item dropdown">
-                      <a className={`nav-link dropdown-toggle ${isActive('/profil') || isActive('/sotk') || isActive('/data-penduduk') || isActive('/data-kewilayahan')}`} href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Profil
-                      </a>
-                      <ul className="dropdown-menu px-2">
-                        <li><Link className={`dropdown-item ${isActive('/profil/tentang')}`} href="/profil/tentang">Tentang</Link></li>
-                        <li><Link className={`dropdown-item ${isActive('/profil/visi-misi')}`} href="/profil/visi-misi">Visi & Misi</Link></li>
-                        <li><Link className={`dropdown-item ${isActive('/sotk')}`} href="/sotk">SOTK</Link></li>
-                        <li><Link className={`dropdown-item ${isActive('/data-penduduk')}`} href="/data-penduduk">Data Penduduk</Link></li>
-                        <li><Link className={`dropdown-item ${isActive('/data-wilayah')}`} href="/data-wilayah">Data Kewilayahan</Link></li>
-                      </ul>
+                    <li className="nav-item">
+                      <Link className={`nav-link ${isActive('active')}`} href="#visi-misi">Visi-Misi</Link>
                     </li>
-                    <li className="nav-item mx-1">
-                      <button 
-                        className="nav-link border-0 bg-transparent p-2" 
-                        onClick={() => handleSectionNavigation('struktur-organisasi')}
-                      >
-                        Struktur Organisasi
-                      </button>
+                    <li className="nav-item">
+                      <Link className={`nav-link ${isActive('active')}`} href="#struktur-organisasi">Struktur Organisasi</Link>
                     </li>
-                    <li className="nav-item mx-1">
-                      <button 
-                        className="nav-link border-0 bg-transparent p-2" 
-                        onClick={() => handleSectionNavigation('data-wilayah')}
-                      >
-                        Data Wilayah
-                      </button>
+                    <li className="nav-item">
+                      <Link className={`nav-link ${isActive('active')}`} href="#data-wilayah">Data Wilayah</Link>
                     </li>
-                    <li className="nav-item mx-1">
-                      <button 
-                        className="nav-link border-0 bg-transparent p-2" 
-                        onClick={handleFooterNavigation}
-                      >
-                        Kontak
-                      </button>
+                    <li className="nav-item">
+                      <Link className={`nav-link ${isActive('active')}`} href="#footer">Kontak</Link>
                     </li>
+                    
                   </ul>
                   <div className="vr ms-2 me-3 d-none d-lg-inline"></div>
                   <ul className='navbar-nav'>

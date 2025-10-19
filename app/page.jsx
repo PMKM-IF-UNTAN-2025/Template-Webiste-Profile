@@ -2,7 +2,6 @@ import React from 'react'
 import HeroCarousel from '../components/HeroCarousel'
 import StrukturOrganisasi from '../components/StrukturOrganisasi'
 import VideoSection from '../components/VideoSection'
-import MapSection from '../components/MapSection'
 import LinkSection from '../components/LinkSection'
 import StaffCarousel from '../components/StaffCarousel'
 import VisiMisiPage from './profil/visi-misi/page.jsx'
@@ -54,9 +53,6 @@ export default function Home(){
     
       {/* Data Wilayah */}
       <DataWilayah />
-
-      {/* Lokasi */}
-      <MapSection />
     </>
   )
 }

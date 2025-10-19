@@ -5,7 +5,7 @@ export default function DataWilayah() {
   const { identitas } = wilayahData;
 
   return (
-    <div className="container my-5">
+    <div className="container my-5" id="data-wilayah">
       <h1 className="mb-3 text-center fw-bold text-primary">
         Data Wilayah Desa {identitas.desa}
       </h1>
