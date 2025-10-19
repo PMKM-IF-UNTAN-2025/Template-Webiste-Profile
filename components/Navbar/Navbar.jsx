@@ -9,8 +9,8 @@ export default function Navbar(){
   const pathname = usePathname()
   
   const isActive = (path) => {
-    if (path === '/' && pathname === '/') return 'active'
-    if (path !== '/' && pathname.startsWith(path)) return 'active'
+    if (path === "/" && pathname === "/") return 'active'
+    if (path !== "/" && pathname.startsWith(path)) return 'active'
     return ''
   }
 
@@ -21,17 +21,21 @@ export default function Navbar(){
           <div className="card-body p-0">
             <nav className="navbar navbar-expand-lg p-2">
               <div className="container px-2">
-                <Link className="navbar-brand text-uppercase" href="/">
+                <div className="navbar-brand text-uppercase">
                   <div className="d-flex justify-content-start align-items-center gap-2">
                     <svg width="40" height="40">
                       <image xlinkHref="/img/logo/logo.svg" width="40" height="40" />
                     </svg>
-                    <div className="d-flex flex-column text-start">
-                      <span className="navbar-brand-title fw-bold">Desa Capkala</span>
-                      <span className="navbar-brand-subtitle fw-semibold">Kecamatan Capkala</span>
-                    </div>
+                    <Link className={`d-flex flex-column text-start nav-link ${isActive('active')}`} href="/">
+                      <span className="navbar-brand-title fw-bold">
+                        Desa Capkala
+                      </span>
+                      <span className="navbar-brand-subtitle fw-semibold">
+                        Kecamatan Capkala
+                      </span>
+                    </Link>
                   </div>
-                </Link>
+                </div>
                 <button 
                   className="navbar-toggler border-0" 
                   type="button" 
@@ -47,7 +51,7 @@ export default function Navbar(){
                 <div className={`collapse navbar-collapse py-2 ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
                   <ul className="navbar-nav ms-auto text-center">
                     <li className="nav-item">
-                      <Link className={`nav-link ${isActive('/')}`} href="/">Beranda</Link>
+                      <Link className={`nav-link ${isActive('active')}`} href="/">Beranda</Link>
                     </li>
                     <li className="nav-item dropdown">
                       <a className={`nav-link dropdown-toggle ${isActive('/profil') || isActive('/sotk') || isActive('/data-penduduk') || isActive('/data-kewilayahan')}`} href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
