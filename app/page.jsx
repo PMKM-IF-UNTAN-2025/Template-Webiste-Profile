@@ -5,6 +5,7 @@ import CardList from '../components/CardList'
 import MapSection from '../components/MapSection'
 import LinkSection from '../components/LinkSection'
 import StaffCarousel from '../components/StaffCarousel'
+import VisiMisiPage from './profil/visi-misi/page.jsx'
 
 // import data (JSON files)
 import site from '../data/site.json'
@@ -23,7 +24,9 @@ export default function Home(){
       {/* Fasilitas Publik */}
       <FasilitasPublik />
       
-      
+      {/* Visi Misi */}
+      <VisiMisiPage />
+
       {/* Perangkat Desa & Video */}
       <section className="page-section">
         <div className="container px-4">

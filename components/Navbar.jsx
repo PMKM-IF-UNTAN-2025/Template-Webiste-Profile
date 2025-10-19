@@ -8,9 +8,9 @@ export default function Navbar(){
   const pathname = usePathname()
 
   const links = [
-    { href: '/', icon: 'bi-bank', title: 'Visi-Misi'},
     { href: '#fasilitasPublik', icon: 'bi-bank', title: 'Fasilitas Publik' },
-    { href: '/data-kewilayahan', icon: 'bi-globe-asia-australia', title: 'Data Kewilayahan' }
+    { href: '#visi-misi', icon: 'bi-book-fill', title: 'Visi Misi' },
+    { href: '/data-kewilayahan', icon: 'bi-globe-asia-australia', title: 'Data Kewilayahan' },
   ]
 
   const isActive = (path) => {
