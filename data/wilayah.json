@@ -1,0 +1,13 @@
+{
+  "identitas": {
+    "desa": "Capkala",
+    "kecamatan": "Capkala",
+    "kabupaten": "Bengkayang",
+    "provinsi": "Kalimantan Barat",
+    "luas_km2": 22.13,
+    "penduduk": 3276,
+    "kk": 905,
+    "kepadatan": 0.65,
+    "map_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26531.428146834813!2d109.03837807813883!3d0.6581167603333419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31e31b45f748af85%3A0xaf8c8ff2945d3f63!2sKantor%20Desa%20Capkala!5e0!3m2!1sid!2sid!4v1760854018054!5m2!1sid!2sid"
+  }
+}
