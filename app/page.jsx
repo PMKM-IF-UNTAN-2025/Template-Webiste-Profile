@@ -5,11 +5,14 @@ import VideoSection from '../components/VideoSection'
 import MapSection from '../components/MapSection'
 import LinkSection from '../components/LinkSection'
 import StaffCarousel from '../components/StaffCarousel'
+import VisiMisiPage from './profil/visi-misi/page.jsx'
 
 // import data (JSON files)
 import hero from '../data/hero.json'
 import strukturOrganisasi from '../data/struktur-organisasi.json'
 import staffData from '../data/staff.json'
+import FasilitasPublik from '../layout/fasilitas-publik'
+import DataWilayah from '../layout/data-wilayah'
 
 export default function Home(){
   return (
@@ -17,9 +20,12 @@ export default function Home(){
       {/* Hero */}
       <HeroCarousel slides={hero} />
 
-      {/* Visi-Misi */}
-     
-      
+      {/* Link */}
+      <LinkSection />
+
+      {/* Visi Misi */}
+      <VisiMisiPage />
+
       {/* Perangkat Desa & Video */}
       <section className="page-section mt-10">
         <div className="container px-4">
@@ -43,11 +49,14 @@ export default function Home(){
         <StrukturOrganisasi images={strukturOrganisasi} />
       </section>
 
+      {/* Fasilitas Publik */}
+      <FasilitasPublik />
+    
       {/* Data Wilayah */}
-      <section id="data-wilayah">
-        <MapSection />
-      </section>
-      
+      <DataWilayah />
+
+      {/* Lokasi */}
+      <MapSection />
     </>
   )
 }
