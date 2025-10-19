@@ -5,6 +5,7 @@ import CardList from '../components/CardList'
 import MapSection from '../components/MapSection'
 import LinkSection from '../components/LinkSection'
 import StaffCarousel from '../components/StaffCarousel'
+import VisiMisiPage from './profil/visi-misi/page.jsx'
 
 // import data (JSON files)
 import site from '../data/site.json'
@@ -12,6 +13,7 @@ import hero from '../data/hero.json'
 import berita from '../data/berita.json'
 import wisata from '../data/wisata.json'
 import umkm from '../data/umkm.json'
+import FasilitasPublik from '../layout/fasilitas-publik'
 import DataWilayah from '../layout/data-wilayah'
 
 export default function Home(){
@@ -20,6 +22,8 @@ export default function Home(){
       {/* Hero */}
       <HeroCarousel slides={hero} />
       
+      {/* Fasilitas Publik */}
+      <FasilitasPublik />
       {/* Link */}
       <LinkSection />
 
@@ -28,6 +32,9 @@ export default function Home(){
 
 
       
+      {/* Visi Misi */}
+      <VisiMisiPage />
+
       {/* Perangkat Desa & Video */}
       <section className="page-section">
         <div className="container px-4">

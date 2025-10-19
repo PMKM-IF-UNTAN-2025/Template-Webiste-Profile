@@ -6,7 +6,7 @@ export default function LinkSection(){
     { href: '/berita', icon: 'bi-newspaper', title: 'Berita' },
     { href: '/pengumuman', icon: 'bi-megaphone', title: 'Pengumuman' },
     { href: '/layanan', icon: 'bi-award', title: 'Layanan' },
-    { href: '/sarana-prasarana', icon: 'bi-bank', title: 'Sarana dan Prasarana' },
+    { href: '/sarana-prasarana', icon: 'bi-bank', title: 'Fasilitas Publik' },
     { href: '/dokumen', icon: 'bi-file-earmark', title: 'Dokumen Publik' },
     { href: '/data-penduduk', icon: 'bi-people', title: 'Data Penduduk' },
     { href: '/data-wilayah', icon: 'bi-globe-asia-australia', title: 'Data Wilayah' }
