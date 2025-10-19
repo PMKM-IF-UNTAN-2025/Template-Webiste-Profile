@@ -22,6 +22,9 @@ export default function Home(){
       {/* Hero */}
       <HeroCarousel slides={hero} />
       
+      {/* Visi Misi */}
+      <VisiMisiPage />
+      
       {/* Fasilitas Publik */}
       <FasilitasPublik />
       {/* Link */}
@@ -32,8 +35,6 @@ export default function Home(){
 
 
       
-      {/* Visi Misi */}
-      <VisiMisiPage />
 
       {/* Perangkat Desa & Video */}
       <section className="page-section">
