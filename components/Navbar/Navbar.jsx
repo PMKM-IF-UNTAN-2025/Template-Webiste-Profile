@@ -1,12 +1,65 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import ThemeToggle from './ThemeToggle'
 
 export default function Navbar(){
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname()
+  const router = useRouter()
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  useEffect(() => {
+    setIsMenuOpen(false)
+  }, [pathname])
+
+  const handleSectionNavigation = (sectionId) => {
+    setIsMenuOpen(false)
+    
+    if (pathname === '/') {
+      setTimeout(() => {
+        const element = document.getElementById(sectionId)
+        if (element) {
+          const offset = 100
+          const elementPosition = element.getBoundingClientRect().top
+          const offsetPosition = elementPosition + window.pageYOffset - offset
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          })
+        }
+      }, 100)
+    } else {
+      router.push(`/#${sectionId}`)
+    }
+  }
+
+  const handleFooterNavigation = () => {
+    setIsMenuOpen(false)
+    
+    if (pathname === '/') {
+      setTimeout(() => {
+        const footer = document.getElementById('footer')
+        if (footer) {
+          const offset = 100
+          const footerPosition = footer.getBoundingClientRect().top
+          const offsetPosition = footerPosition + window.pageYOffset - offset
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          })
+        }
+      }, 100)
+    } else {
+      router.push('/#footer')
+    }
+  }
   
   const isActive = (path) => {
     if (path === "/" && pathname === "/") return 'active'
