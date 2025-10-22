@@ -46,6 +46,9 @@ Navbar
 ----------------------------------------------------
 */
 /* Navbar */
+
+
+
 .bg-navbar-blur,
 html[data-bs-theme=dark] .bg-navbar-blur {
     -webkit-backdrop-filter: saturate(200%) blur(20px);
@@ -68,8 +71,8 @@ html[data-bs-theme=dark] .bg-navbar-blur {
 
 /* Navbar Styles */
 .navbar {
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .navbar-brand {
@@ -105,12 +108,12 @@ html[data-bs-theme=dark] .bg-navbar-blur {
 
 /* Responsive Navbar */
 @media (max-width: 991.98px) {
-  .navbar-collapse {
-    background: white;
+    
+    .navbar-collapse {
     padding: 1rem;
     border-radius: 0.5rem;
     margin-top: 1rem;
-  }
+    }
 
   .nav-link {
     padding: 0.5rem 0 !important;
@@ -163,7 +166,6 @@ html[data-bs-theme=dark] .navbar-brand .navbar-brand-subtitle {
 /* Ensure stable layout for all states */
 .struktur-org-image-wrapper {
   position: relative;
-  z-index: 10;
   margin-bottom: 2rem;
   margin-top: 1rem;
   min-height: 600px;
@@ -183,7 +185,6 @@ html[data-bs-theme=dark] .navbar-brand .navbar-brand-subtitle {
 .struktur-org-container {
   padding: 1rem 0;
   position: relative;
-  z-index: 5;
   margin-bottom: 1rem;
   clear: both;
   isolation: isolate;
@@ -281,6 +282,10 @@ html[data-bs-theme=dark] .navbar-nav .nav-item .nav-link:hover {
     .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item,
     .navbar-nav .nav-item.dropdown .dropdown-menu .active {
         text-align: center;
+    }
+
+    .nav-item, html[data-bs-theme=dark] {
+        color: var(--light-color);
     }
 
     .navbar-brand .navbar-brand-title,
