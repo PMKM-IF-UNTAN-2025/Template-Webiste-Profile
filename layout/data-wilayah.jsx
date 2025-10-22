@@ -6,9 +6,9 @@ export default function DataWilayah() {
 
   return (
     <div className="container my-5" id="data-wilayah">
-      <h1 className="mb-3 text-center fw-bold text-primary">
+      <h2 className="mb-3 text-center ">
         Data Wilayah Desa {identitas.desa}
-      </h1>
+      </h2>
       <p className="text-center text-muted small mb-5">
         *Data berdasarkan sumber tahun 2021*
       </p>

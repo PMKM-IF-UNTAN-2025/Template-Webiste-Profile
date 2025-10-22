@@ -76,7 +76,7 @@ export default function StrukturOrganisasi({ images = [] }) {
 
   return (
     <section className="page-section struktur-org-container">
-      <div className="container px-4 mb-10 mt-10">
+      <div className="container px-4 mb-5 mt-5">
         <div className="row justify-content-center">
           <div className="col-lg-11 col-xl-10">
             <div className="text-center mb-5" data-aos="fade-up" data-aos-duration="1500">
