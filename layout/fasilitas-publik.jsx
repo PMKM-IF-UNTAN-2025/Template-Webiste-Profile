@@ -82,7 +82,7 @@ export default function FasilitasPublik(){
     <section className="page-section" id="fasilitasPublik">
       <div className="container px-4">
         <div className="row justify-content-center align-items-center g-4 mb-4">
-            <h2 className="my-auto text-lg-start pt-10 text-center">Fasilitas Publik</h2>
+            <h2 className="my-auto text-center">Fasilitas Publik</h2>
         </div>
 
         <div className="row justify-content-center">
